@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-size: 1.5em;
+    line-height: 1.6;
+    background-color: #dddd;
+}
+.container{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 100%;
+}
+@media(max-width:767px){
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 0;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+.frist-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../css/02-CHINAGLASS-JP1-superJumbo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media(max-width:767px){
+    .frist-div{
+        background:url(../css/Zhou-Qunfeibvds.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.text-style{
+    display: inline-block;
+    font-size: 4rem;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 4px #000;
+    text-transform: uppercase;
+    width:7%;
+    padding: 10px;
+    text-align: center;
+    padding: 0;
+    color: white;
+    margin: auto 10%;
+    opacity: 0.8;
+    word-wrap: break-word;
+}
+p{
+    padding: 2px;
+} 
+.contant{
+    text-align: center;
+    padding:10px auto;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+.sec-info p{
+    color:#363434;
+}
+@media(max-width:767px){
+    .text-style{
+        width: 25%;
+    }
+}
+.sec-info li p{
+    padding: 10px;
+}
+.cont-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:767px) {
+    .cont-img{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.cont-img .img{
+    position: relative;
+}
+.cont-img img{
+    position: relative;
+    z-index: 1;
+}
+.cont-img .img::after{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 300px;
+    right: -8px;
+    bottom: -51px;
+    z-index: -1;
+    border: 3px solid #000;
+}
+@media(max-width:767px){
+    .cont-img .img::after{
+        height: 280px;
+        right: -16px;
+        bottom: -32px;
+    }
+    .cont-img img{
+        margin-top: 55px;
+    }
+}
+@media(max-width:922px){
+    .cont-img{
+        flex-direction: column;}
+        .cont-img img{
+            margin-top: 65px;
+            padding: 10px;
+        }
+}
+
